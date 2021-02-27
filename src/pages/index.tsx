@@ -4,6 +4,10 @@ import OpenGraphMeta from "../components/meta/OpenGraphMeta";
 import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 
+import { Button } from '../components/Form/components/Button'
+import { RegularText } from '../components/Typography/components/RegularText'
+import { SectionTitle } from '../components/Typography/components/Title'
+
 export default function Index() {
   return (
     <Layout>
@@ -12,12 +16,10 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container">
         <div>
-          <h1>
-            Hi, We're Next.js & Netlify<span className="fancy">.</span>
-          </h1>
-          <span className="handle">@nextjs-netlify-blog</span>
-          <h2>A blog template with Next.js and Netlify.</h2>
-          <SocialList />
+          <SectionTitle title='Título muito fera'  />
+          <RegularText text='Regular text de exemplo pros gurized do gremio' />
+
+          <Button>Dale gurizada</Button>
         </div>
       </div>
       <style jsx>{`

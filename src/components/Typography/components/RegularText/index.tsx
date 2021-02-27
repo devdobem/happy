@@ -7,13 +7,12 @@ import { Container } from './styles'
  * Type definitions.
  */
 type Props = {
-  title: string
+  text: string
 }
 
 /**
  * Component.
  */ 
-
-export function SectionTitle({ title = 'Seu título aqui' }: Props) {
-  return <Container>{title}</Container>
+export function RegularText({ text = '' }: Props) {
+  return <Container>{text}</Container>
 }
