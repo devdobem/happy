@@ -1,3 +1,5 @@
+import { HeartFill } from 'styled-icons/bootstrap'
+
 import Layout from "../components/Layout";
 import BasicMeta from "../components/meta/BasicMeta";
 import OpenGraphMeta from "../components/meta/OpenGraphMeta";
@@ -5,8 +7,10 @@ import TwitterCardMeta from "../components/meta/TwitterCardMeta";
 import { SocialList } from "../components/SocialList";
 
 import { Button } from '../components/Form/components/Button'
+import { Xpto as Icon } from '../components/Icon/components/Icon'
 import { RegularText } from '../components/Typography/components/RegularText'
 import { SectionTitle } from '../components/Typography/components/Title'
+import { Section } from '../components/Sections/components/Section'
 
 export default function Index() {
   return (
@@ -16,10 +20,13 @@ export default function Index() {
       <TwitterCardMeta url={"/"} />
       <div className="container">
         <div>
-          <SectionTitle title='Título muito fera'  />
+          <Section title='Nossos projetos' />
           <RegularText text='Regular text de exemplo pros gurized do gremio' />
 
-          <Button>Dale gurizada</Button>
+          <Button>
+            <Icon component={<HeartFill />} />
+            Dale gurizada
+          </Button>
         </div>
       </div>
       <style jsx>{`
