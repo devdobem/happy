@@ -1,9 +1,10 @@
+import { SectionTitle } from '../../../Typography/components/Title'
+
 /**
  * Styles.
  */
-import { Container } from './styles'
+import { Container, ChildrenContainer } from './styles'
 
-import { SectionTitle } from '../../../Typography/components/Title'
 
 /**
  * Type definitions.
@@ -11,15 +12,28 @@ import { SectionTitle } from '../../../Typography/components/Title'
 type Props = {
   title: string
   hasUnderline?: boolean;
+  paddingTop?: number;
+  children?: React.ReactNode
 }
 /**
  * Component.
- */ 
+ */
 
-export function Section({ title = 'Seu título aqui', hasUnderline = false }: Props) {
+export function Section({
+  title = 'Seu título aqui',
+  hasUnderline = false,
+  paddingTop = 0,
+  children
+}: Props) {
   return (
-    <Container>
-      <SectionTitle title={title} hasUnderline />
+    <Container style={{ paddingTop: paddingTop }}>
+      <SectionTitle title={title} hasUnderline={hasUnderline} />
+
+      {children && (
+        <ChildrenContainer>
+          {children}
+        </ChildrenContainer>
+      )}
     </Container>
   );
 }

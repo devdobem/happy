@@ -1,7 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.button`
+  width: fit-content;
+  
   display: flex;
+  justify-content: center;
   
   span {
     margin-right: 10px;
@@ -30,4 +33,8 @@ export const Container = styled.button`
   text-transform: uppercase;
   text-align: center;
   padding: 12px 30px;
+
+  &:hover {
+    opacity: 0.8;
+  }
 `

@@ -2,5 +2,5 @@
  * Component.
  */
 export function Simple() {
-  return <span>Texto textoTexto</span>
+  return <span>Texto texto Texto</span>
 }

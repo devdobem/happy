@@ -14,7 +14,10 @@ type Props = {
  * Component.
  */ 
 
-export function SectionTitle({ title = 'Seu título aqui', hasUnderline = false }: Props) {
+export function SectionTitle({ 
+  title = 'Seu título aqui',
+  hasUnderline = false,
+}: Props) {
   return (
     <Container>
       <Text hasUnderline={hasUnderline}>{title}</Text>

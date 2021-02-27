@@ -5,12 +5,14 @@ interface TextProps {
 }
 
 export const Container = styled.div`
-  background: lightpink;
-  height: auto;
+  display: flex;
+  position: relative;
+  width: fit-content;
 `;
 
 export const Text = styled.h1<TextProps>`
   color: #0656B0;
+  z-index: 1;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
@@ -22,6 +24,8 @@ export const Text = styled.h1<TextProps>`
 `;
 
 export const Underline = styled.div`
+  position: absolute;
+  top: 45px;
   background: #83BF04;
   height: 19px;
   width: 100%;

@@ -7632,6 +7632,13 @@ randomfill@^1.0.3:
     randombytes "^2.0.5"
     safe-buffer "^5.1.0"
 
+re-carousel@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/re-carousel/-/re-carousel-2.4.0.tgz#636ec0c8cf00b012a845d37b6f7ab1b52569806e"
+  integrity sha512-xogK+SLWHXdzEfexSC2UQWk3m6uxL3edqrAMseslEIQ/hjtPHkMLdFToI5oMptUR1t9v6Jqo/vu5mQGUs/q5cg==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-dom@16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"

@@ -8,11 +8,12 @@ import { Container } from './styles'
  */
 type Props = {
   text: string
+  isWhite?: boolean;
 }
 
 /**
  * Component.
- */ 
-export function RegularText({ text = '' }: Props) {
-  return <Container>{text}</Container>
+ */
+export function RegularText({ text = '', isWhite = false }: Props) {
+  return <Container isWhite={isWhite}>{text}</Container>
 }

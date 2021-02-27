@@ -15,7 +15,7 @@ export default function Layout({ children }: Props) {
         <meta name="theme-color" content="#fff" />
       </Head>
       <nav>
-        <Navigation />
+        {/* <Navigation /> */}
       </nav>
       <main>{children}</main>
       <style jsx>
