@@ -5,6 +5,7 @@ export const Section = styled.section`
   background-image: url(/images/banner.png);
   background-repeat: no-repeat;
   background-position: top right;
+  background-size: contain;
 `
 
 export const Header = styled.div`
