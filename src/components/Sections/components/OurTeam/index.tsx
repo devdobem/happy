@@ -1,8 +1,5 @@
-import Carousel from 're-carousel'
-
 import { Section } from '../Section'
 
-import { RegularText } from '../../../Typography/components/RegularText'
 
 import {
   AngledContainer,
@@ -52,15 +49,13 @@ export function OurTeam () {
       <Container>
         <Section title='Nosso time' hasUnderline>
           <PeopleContainer>
-            <Carousel>
-              {team.map(({ image, name, role }) => (
-                <PersonContainer>
-                  <PersonImage src={image} />
-                  <PersonName>{name}</PersonName>
-                  <PersonRole>{role}</PersonRole>
-                </PersonContainer>
-              ))}
-            </Carousel>
+            {team.map(({ image, name, role }) => (
+              <PersonContainer>
+                <PersonImage src={image} />
+                <PersonName>{name}</PersonName>
+                <PersonRole>{role}</PersonRole>
+              </PersonContainer>
+            ))}
           </PeopleContainer>
         </Section>
       </Container>

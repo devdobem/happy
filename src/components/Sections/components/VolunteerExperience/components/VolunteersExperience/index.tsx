@@ -40,7 +40,7 @@ export function VolunteersExperience() {
 
   return (
     <Section title="Experiência dos nossos voluntários" hasUnderline>
-      <Container>
+      {/* <Container>
         {
           volunteers.map((volunteer) => {
             <VolunteerContainer
@@ -51,7 +51,7 @@ export function VolunteersExperience() {
             />
           })
         }
-      </Container>
+      </Container> */}
     </Section>
   );
 }
