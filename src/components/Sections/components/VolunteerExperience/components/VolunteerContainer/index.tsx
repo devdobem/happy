@@ -10,7 +10,7 @@ import {
   Quote,
 } from './styles';
 import QuoteSymbol from '../../../../../../assets/quote.svg';
-import { IVolunteer } from '../VolunteersList';
+import { IVolunteer } from '../VolunteersExperience';
 /**
  * Type definitions.
  */

@@ -1,10 +1,12 @@
 import { Section } from '../Section'
+
 import { RegularText } from '../../../Typography/components/RegularText'
+import { Button } from '../../../Form/components/Button'
 
 /**
  * Styles.
  */
-import { Container } from './styles'
+import { Container, SectionContainer, Image } from './styles'
 
 
 /**
@@ -17,8 +19,16 @@ type Props = {}
 
 export function WantToBeVolunteer({}: Props) {
   return (
-    <Section title='Quer ser um voluntário?' hasUnderline={false}>
-      <RegularText text='Se você é da área da saúde, compartilha de nossos princípios e se interessou em nossos projetos, participe como um de nossos voluntários!' />
-    </Section>
+    <Container>
+      <Section title='Quer ser um voluntário?' hasUnderline={false}>
+        <SectionContainer>
+          <RegularText text='Se você é da área da saúde, compartilha de nossos princípios e se interessou em nossos projetos, participe como um de nossos voluntários!' />
+
+          <Button>Quero ser voluntário</Button>
+        </SectionContainer>
+      </Section>
+
+      <Image src='/images/puzzle.svg' />
+    </Container>
   );
 }

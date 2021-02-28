@@ -19,7 +19,7 @@ export interface IVolunteer {
  */
 
 
-export function VolunteersList() {
+export function VolunteersExperience() {
   const [volunteers, setVolunteers] = useState<IVolunteer[]>([
     {
       name: "Pedro Leite 1",
@@ -37,6 +37,7 @@ export function VolunteersList() {
       quote: "Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo"
     }
   ])
+
   return (
     <Section title="Experiência dos nossos voluntários" hasUnderline>
       <Container>

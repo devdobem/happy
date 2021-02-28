@@ -8,11 +8,12 @@ import { Container } from './styles'
  */
 type Props = {
   children: React.ReactNode
+  onClick?(): void
 }
 
 /**
  * Component.
- */ 
-export function Button({ children }: Props) {
-  return <Container>{children}</Container>
+ */
+export function Button({ children, onClick = () => {} }: Props) {
+  return <Container onClick={onClick}>{children}</Container>
 }
