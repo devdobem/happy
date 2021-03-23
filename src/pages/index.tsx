@@ -47,6 +47,10 @@ export default function Home() {
           <Member name="Marcel Zanluca" position="CTO" />
         </MembersList>
       </Section>
+
+      <Section>
+        <SectionTitle>Nossos projetos</SectionTitle>
+      </Section>
     </>
   )
 }
