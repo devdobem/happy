@@ -33,6 +33,20 @@ export default function Home() {
           que foi muito bem recebido.
         </Text>
       </Section>
+
+      <Section>
+        <SectionTitle>Nosso time</SectionTitle>
+        <MembersList>
+          <Member name="Marcel Zanluca" position="CTO" />
+          <Member name="Marcel Zanluca" position="CTO" />
+          <Member name="Marcel Zanluca" position="CTO" />
+          <Member name="Marcel Zanluca" position="CTO" />
+          <Member name="Marcel Zanluca" position="CTO" />
+          <Member name="Marcel Zanluca" position="CTO" />
+          <Member name="Marcel Zanluca" position="CTO" />
+          <Member name="Marcel Zanluca" position="CTO" />
+        </MembersList>
+      </Section>
     </>
   )
 }
@@ -87,4 +101,22 @@ function SectionTitle({ children }: SectionTitleProps) {
 type TextProps = { children: ReactNode }
 function Text({ children }: TextProps) {
   return <p>{children}</p>
+}
+
+type MembersProps = { children: ReactNode }
+function MembersList({ children }: MembersProps) {
+  return <div>{children}</div>
+}
+
+type MemberProps = { name: string; position: string }
+function Member({
+  name = 'No name yet!',
+  position = 'No position yet!'
+}: MemberProps) {
+  return (
+    <div>
+      <span>{name}</span>
+      <span>{position}</span>
+    </div>
+  )
 }
