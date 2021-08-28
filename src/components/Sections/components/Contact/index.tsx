@@ -22,7 +22,7 @@ export function Contact({}: Props) {
     <Container>
       <Image src='/images/paper-plane.svg' />
 
-      <Section title='Contato' hasUnderline={false}>
+      <Section sectionId="contato" title='Contato' hasUnderline={false}>
         <SectionContainer>
           <RegularText text='Dúvidas, comentários ou sugestões? Estamos sempre à disposição!' />
 

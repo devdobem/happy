@@ -13,7 +13,8 @@ type Props = {
   title: string
   hasUnderline?: boolean;
   paddingTop?: number;
-  children?: React.ReactNode
+  children?: React.ReactNode;
+  sectionId: string;
 }
 /**
  * Component.
@@ -23,10 +24,11 @@ export function Section({
   title = 'Seu título aqui',
   hasUnderline = false,
   paddingTop = 0,
-  children
+  children,
+  sectionId
 }: Props) {
   return (
-    <Container style={{ paddingTop: paddingTop }}>
+    <Container id={sectionId} style={{ paddingTop: paddingTop }}>
       <SectionTitle title={title} hasUnderline={hasUnderline} />
 
       {children && (

@@ -86,7 +86,7 @@ const responsive: ResponsiveType = {
   return (
     <AngledContainer>
       <Container>
-        <Section title='Nosso time' hasUnderline>
+        <Section sectionId="time" title='Nosso time' hasUnderline>
           <PeopleContainer>
             <Carousel
               swipeable

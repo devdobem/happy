@@ -52,7 +52,7 @@ const responsive: ResponsiveType = {
  */
 export function OurProjects() {
   return (
-    <Section title="Nossos Projetos">
+    <Section sectionId="projetos" title="Nossos Projetos">
       <Container>
         <Carousel
           swipeable

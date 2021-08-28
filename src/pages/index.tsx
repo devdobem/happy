@@ -20,6 +20,7 @@ import { OurTeam } from '../components/Sections/components/OurTeam'
 import { OurProjects } from '../components/Sections/components/OurProjects'
 import { WantToBeVolunteer } from '../components/Sections/components/WantToBeVolunteer'
 import { Contact } from '../components/Sections/components/Contact'
+import { Contribute } from '../components/Sections/components/Contribute'
 
 export default function Index() {
   return (
@@ -27,10 +28,11 @@ export default function Index() {
       <Introduction />
       <OurHistory />
       <OurTeam />
+      <OurProjects />
+      <Contribute />
       <OurPartners />
       <VolunteersExperience />
       <WantToBeVolunteer />
-      <OurProjects />
       <Contact />
       <Footer />
     </Page>

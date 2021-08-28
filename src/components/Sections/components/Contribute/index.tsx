@@ -5,27 +5,19 @@ import { Container } from './styles';
 import { RegularText } from '../../../Typography/components/RegularText';
 import { Section } from '../Section';
 
-
-/**
- * Type definitions.
- */
-type Props = {
-  title: string
-  hasUnderline?: boolean;
-}
+import { Button } from '../../../Form/components/Button'
 
 /**
  * Component.
  */
-export function SectionTitle({
-  title = 'Seu título aqui',
-  hasUnderline = false,
-}: Props) {
+export function Contribute() {
   return (
-    <Section title="Contribua">
+    <Section sectionId="contribua" title="Contribua">
       <Container>
         <RegularText text="Nós somos uma organização sem fins lucrativos, portanto todo o dinheiro recebido através das doações são direcionados para nossos projetos sociais. Se você acredita na HAPPY e quer ajudar de alguma forma, você pode realizar uma doação através da nossa plataforma."/>
-        {/* <Text>Nós somos uma organização sem fins lucrativos, portanto todo o dinheiro recebido através das doações são direcionados para nossos projetos sociais. Se você acredita na HAPPY e quer ajudar de alguma forma, você pode realizar uma doação através da nossa plataforma.</Text> */}
+        <Button>
+          Quero doar
+        </Button>
       </Container>
     </Section>
   );

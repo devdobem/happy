@@ -23,7 +23,7 @@ export function OurPartners() {
     "http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG",
 ]);
   return (
-    <Section title="Nossos parceiros">
+    <Section sectionId="parceiros" title="Nossos parceiros">
       <RegularText text="Nossos parceiros são imprescindíveis para o crescimento do nosso projeto. Sua ajuda será revertida em nossas ações. Temos orgulho em ganhar seu incentivo e sua confiança."/>
     <Container>
       {

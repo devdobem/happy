@@ -11,19 +11,19 @@ export function Menu() {
     <Nav>
       <List>
         <ListItem>
-          <a href="#">Início</a>
+          <a href="#inicio">Início</a>
         </ListItem>
         <ListItem>
-          <a href="#">Sobre</a>
+          <a href="#historia">Sobre</a>
         </ListItem>
         <ListItem>
-          <a href="#">Projetos</a>
+          <a href="#contribua">Contribua</a>
         </ListItem>
         <ListItem>
-          <a href="#">Contribua</a>
+          <a href="#projetos">Projetos</a>
         </ListItem>
         <ListItem>
-          <a href="#">Contato</a>
+          <a href="#contato">Contato</a>
         </ListItem>
       </List>
     </Nav>
