@@ -22,10 +22,11 @@ export const AngledContainer = styled.div`
 export const PeopleContainer = styled.div`
   padding: 20px 0;
 
-  max-width: 1000px;
+  max-width: 90vw;
+  width: 90vw;
 
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
 `
 
 export const PersonContainer = styled.div`
@@ -35,6 +36,7 @@ export const PersonContainer = styled.div`
   align-items: center;
 
   width: 200px;
+  max-width: 200px;
   height: 300px;
 `
 
