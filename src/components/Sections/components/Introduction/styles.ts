@@ -23,7 +23,7 @@ export const Header = styled.div`
 
 export const ColoredLogo = styled.img`
   @media (min-width: 600px) {
-  width: 150px;
+    width: 150px;
   }
 `
 
@@ -36,6 +36,11 @@ export const OrgName = styled.h1`
   font-weight: 700;
   font-size: 48px;
   color: #0656B0;
+
+  @media screen and (max-width: 480px) {
+    width: 100vw;
+    height: fit-content;
+  }
 `
 
 export const OrgSlogan = styled.h2`

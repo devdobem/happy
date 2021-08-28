@@ -7,9 +7,9 @@ export const Container = styled.section`
   padding-right: 182px;
   box-sizing: border-box;
 
-  @media screen and (min-width: 480px) {
-    padding-right: 70px;
-    padding-left: 70px;
+  @media screen and (max-width: 480px) {
+    padding-right: 10px;
+    padding-left: 10px;
   }
 `
 
