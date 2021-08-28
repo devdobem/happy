@@ -1,4 +1,4 @@
-import Carousel from 'react-multi-carousel'
+import Carousel, { ResponsiveType } from 'react-multi-carousel'
 
 /**
  * Components.
@@ -14,22 +14,36 @@ import { Container } from './styles'
 /**
  * Corousel configurations.
  */
-const responsive = {
+const responsive: ResponsiveType = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5
+    items: 5,
+    partialVisibilityGutter: 40
   },
   desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
+    breakpoint: { max: 3000, min: 1300 },
+    items: 2,
+    partialVisibilityGutter: 40
+  },
+  smallDesktop: {
+    breakpoint: { max: 1300, min: 1200 },
+    items: 2,
+    partialVisibilityGutter: 0
   },
   tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
+    breakpoint: { max: 1200, min: 1090 },
+    items: 1,
+    partialVisibilityGutter: 400
+  },
+  smallTablet: {
+    breakpoint: { max: 1090, min: 900 },
+    items: 1,
+    partialVisibilityGutter: 200
   },
   mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
+    breakpoint: { max: 900, min: 0 },
+    items: 1,
+    partialVisibilityGutter: 0
   }
 }
 
@@ -44,7 +58,7 @@ export function OurProjects() {
           swipeable
           showDots
           infinite
-          removeArrowOnDeviceType={["tablet", "mobile"]}
+          partialVisbile
           responsive={responsive}
         >
           <ProjectCard
