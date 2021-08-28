@@ -14,7 +14,7 @@ import { Section, Header, ColoredLogo, OrgName, OrgSlogan } from './styles'
  */
 export function Introduction() {
   return (
-    <Section id="sobre">
+    <Section id="inicio">
       <Header>
         <ColoredLogo src="images/logo.svg" alt="H.A.P.P.Y logo" />
         <Menu />

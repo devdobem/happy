@@ -5,7 +5,6 @@ import Carousel, { ResponsiveType } from 'react-multi-carousel'
 
 import {
   AngledContainer,
-  Container,
   PeopleContainer,
   PersonContainer,
   PersonImage,
@@ -85,7 +84,6 @@ const responsive: ResponsiveType = {
 
   return (
     <AngledContainer>
-      <Container>
         <Section sectionId="time" title='Nosso time' hasUnderline>
           <PeopleContainer>
             <Carousel
@@ -105,7 +103,6 @@ const responsive: ResponsiveType = {
             </Carousel>
           </PeopleContainer>
         </Section>
-      </Container>
     </AngledContainer>
   )
 }

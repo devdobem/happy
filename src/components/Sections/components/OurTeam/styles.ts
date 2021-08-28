@@ -1,14 +1,5 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-
-  padding: 20px 0;
-
-  align-items: center;
-`
-
 export const AngledContainer = styled.div`
   width: 100vw;
   display: flex;
@@ -24,9 +15,6 @@ export const PeopleContainer = styled.div`
 
   max-width: 90vw;
   width: 90vw;
-
-  /* display: flex;
-  flex-direction: row; */
 `
 
 export const PersonContainer = styled.div`
