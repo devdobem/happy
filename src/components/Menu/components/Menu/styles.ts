@@ -3,6 +3,9 @@ import styled from 'styled-components'
 export const Nav = styled.nav`
   padding: 0;
   list-style: none;
+  @media (max-width: 600px) {
+    visibility: hidden;
+  }
 `
 
 export const List = styled.ul`
