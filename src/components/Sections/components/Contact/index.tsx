@@ -6,7 +6,7 @@ import { RegularText } from '../../../Typography/components/RegularText'
 /**
  * Styles.
  */
-import { Container, SectionContainer, Image, ButtonContainer } from './styles'
+import { Container, SectionContainer, Image } from './styles'
 
 
 /**
@@ -25,10 +25,7 @@ export function Contact({}: Props) {
       <Section sectionId="contato" title='Contato' hasUnderline={false}>
         <SectionContainer>
           <RegularText text='Dúvidas, comentários ou sugestões? Estamos sempre à disposição!' />
-
-          <ButtonContainer>
-            <Button onClick={() => location.href = 'mailto:contato@happy.ong.br'}>Enviar um e-mail</Button>
-          </ButtonContainer>
+          <Button onClick={() => location.href = 'mailto:contato@happy.ong.br'}>Enviar um e-mail</Button>
         </SectionContainer>
       </Section>
     </Container>

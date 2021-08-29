@@ -24,17 +24,18 @@ export function VolunteerContainer({
   image_url,
   quote
 }: IVolunteer) {
-  console.log("name")
   return (
     <Container>
       <VolunteerInfoContainer>
         <VolunteerPicture src={image_url}/>
         <VolunteerName>{name}</VolunteerName>
       </VolunteerInfoContainer>
+
       <QuoteContainer>
         <QuoteSymbol />
       </QuoteContainer>
-        <Quote>{quote}</Quote>
+
+      <Quote>{quote}</Quote>
     </Container>
   );
 }

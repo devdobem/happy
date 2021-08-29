@@ -17,4 +17,13 @@ export const SectionContainer = styled.div`
   align-items: flex-end;
 `
 
-export const Image = styled.img``
+export const Image = styled.img`
+  align-self: flex-end;
+
+  /* MOBILE */
+  @media screen and (max-width: 480px) {
+    margin-top: 20px;
+
+    max-width: fit-content;
+  }
+`

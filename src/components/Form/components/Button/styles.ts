@@ -2,10 +2,10 @@ import styled from 'styled-components'
 
 export const Container = styled.button`
   width: fit-content;
-  
+
   display: flex;
   justify-content: center;
-  
+
   span {
     margin-right: 10px;
   }
@@ -36,5 +36,9 @@ export const Container = styled.button`
 
   &:hover {
     opacity: 0.8;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
   }
 `

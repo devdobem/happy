@@ -13,6 +13,9 @@ export const Container = styled.footer`
   @media only screen and (max-width: 768px) {
     flex-direction: column;
     padding-top: 20px;
+
+    height: 180px;
+    padding-bottom: 30px;
   }
 `;
 

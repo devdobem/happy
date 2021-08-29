@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const AngledContainer = styled.div`
-  width: 100vw;
+  /* width: 100vw; */
   display: flex;
 
   align-items: center;
@@ -13,8 +13,12 @@ export const AngledContainer = styled.div`
 export const PeopleContainer = styled.div`
   padding: 20px 0;
 
-  max-width: 90vw;
-  width: 90vw;
+
+  /* MOBILE */
+  @media (max-width: 600px) {
+    max-width: 90vw;
+    width: 90vw;
+  }
 `
 
 export const PersonContainer = styled.div`

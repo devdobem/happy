@@ -15,6 +15,7 @@ type Props = {
   paddingTop?: number;
   children?: React.ReactNode;
   sectionId: string;
+  hasPaddingRight?: boolean;
 }
 /**
  * Component.
@@ -25,10 +26,17 @@ export function Section({
   hasUnderline = false,
   paddingTop = 0,
   children,
+  hasPaddingRight = true ,
   sectionId
 }: Props) {
   return (
-    <Container id={sectionId} style={{ paddingTop: paddingTop }}>
+    <Container
+      id={sectionId}
+      hasPaddingRight={hasPaddingRight}
+      style={{
+        paddingTop: paddingTop,
+      }}
+    >
       <SectionTitle title={title} hasUnderline={hasUnderline} />
 
       {children && (

@@ -17,26 +17,21 @@ import { Container } from './styles'
 const responsive: ResponsiveType = {
   superLargeDesktop: {
     breakpoint: { max: 4000, min: 3000 },
-    items: 5,
+    items: 3,
     partialVisibilityGutter: 40
   },
   desktop: {
     breakpoint: { max: 3000, min: 1300 },
     items: 2,
-    partialVisibilityGutter: 40
+    partialVisibilityGutter: 50
   },
   smallDesktop: {
     breakpoint: { max: 1300, min: 1200 },
-    items: 2,
-    partialVisibilityGutter: 0
+    items: 1,
+    partialVisibilityGutter: 300
   },
   tablet: {
-    breakpoint: { max: 1200, min: 1090 },
-    items: 1,
-    partialVisibilityGutter: 400
-  },
-  smallTablet: {
-    breakpoint: { max: 1090, min: 900 },
+    breakpoint: { max: 1200, min: 900 },
     items: 1,
     partialVisibilityGutter: 200
   },
@@ -52,13 +47,13 @@ const responsive: ResponsiveType = {
  */
 export function OurProjects() {
   return (
-    <Section sectionId="projetos" title="Nossos Projetos">
+    <Section hasPaddingRight={false} sectionId="projetos" title="Nossos Projetos">
       <Container>
         <Carousel
           swipeable
           showDots
           infinite
-          partialVisbile
+          partialVisible
           responsive={responsive}
         >
           <ProjectCard

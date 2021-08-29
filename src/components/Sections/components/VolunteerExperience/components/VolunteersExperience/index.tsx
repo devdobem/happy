@@ -1,3 +1,5 @@
+import Carousel, { ResponsiveType } from 'react-multi-carousel'
+
 /**
  * Styles.
  */
@@ -20,38 +22,72 @@ export interface IVolunteer {
 
 
 export function VolunteersExperience() {
-  const [volunteers, setVolunteers] = useState<IVolunteer[]>([
-    {
-      name: "Pedro Leite 1",
-      image_url: "https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0",
-      quote: "Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo"
+  /**
+   * Corousel configurations.
+   */
+  const responsive: ResponsiveType = {
+    superLargeDesktop: {
+      breakpoint: { max: 4000, min: 3000 },
+      items: 3,
+      partialVisibilityGutter: 40
     },
-    {
-      name: "Pedro Leite 2",
-      image_url: "https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0",
-      quote: "Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo"
+    desktop: {
+      breakpoint: { max: 3000, min: 1300 },
+      items: 2,
+      partialVisibilityGutter: 200
     },
-    {
-      name: "Pedro Leite 3",
-      image_url: "https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0",
-      quote: "Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo Comi o cu de quem ta lendo"
+    smallDesktop: {
+      breakpoint: { max: 1300, min: 1050 },
+      items: 2,
+      partialVisibilityGutter: 100
+    },
+    tablet: {
+      breakpoint: { max: 1050, min: 950 },
+      items: 2,
+      partialVisibilityGutter: 20
+    },
+    smallTablet: {
+      breakpoint: { max: 950, min: 720 },
+      items: 1,
+      partialVisibilityGutter: 200
+    },
+    mobile: {
+      breakpoint: { max: 600, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 0
     }
-  ])
+  }
 
   return (
-    <Section sectionId="voluntarios" title="Experiência dos nossos voluntários" hasUnderline>
-      {/* <Container>
-        {
-          volunteers.map((volunteer) => {
-            <VolunteerContainer
-              key={volunteer.name}
-              name={volunteer.name}
-              image_url={volunteer.image_url}
-              quote={volunteer.quote}
-            />
-          })
-        }
-      </Container> */}
+    <Section hasPaddingRight={false} sectionId="voluntarios" title="Experiência dos nossos voluntários" hasUnderline>
+      <Container>
+        <Carousel
+          swipeable
+          showDots
+          infinite
+          partialVisible
+          responsive={responsive}
+        >
+          <VolunteerContainer
+            key={"Vini"}
+            name={"Vini 1"}
+            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0"}
+            quote={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+          />
+          <VolunteerContainer
+            key={"Vini"}
+            name={"Vini 2"}
+            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0"}
+            quote={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+          />
+          <VolunteerContainer
+            key={"Vini"}
+            name={"Vini 3"}
+            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0"}
+            quote={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
+          />
+        </Carousel>
+      </Container>
     </Section>
   );
 }

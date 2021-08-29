@@ -5,6 +5,12 @@ export const Container = styled.div`
   flex-direction: row;
 
   align-items: center;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column-reverse;
+
+    margin-bottom: 50px;
+  }
 `
 
 export const Image = styled.img`
@@ -14,6 +20,15 @@ export const Image = styled.img`
   margin-right: 1.5vw;
 
   @media screen and (max-width: 1000px) {
-    display: none;
+    align-self: flex-start;
+    width: 600px;
+    object-fit: cover;
+    height: 500px;
+  }
+
+  @media screen and (max-width: 600px) {
+    width: 400px;
+    object-fit: cover;
+    height: 320px;
   }
 `

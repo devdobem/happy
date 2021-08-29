@@ -5,11 +5,14 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
+  max-width: 348px;
+  width: 348px;
 
   max-height: 286px;
-  max-width: 348px;
+  height: 286px;
+
+
   border-radius: 4px;
-  padding: 32px;
   background: #CFE2F3;
 `;
 
