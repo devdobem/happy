@@ -8,8 +8,9 @@ export const Container = styled.div`
   max-width: 348px;
   width: 348px;
 
-  max-height: 286px;
-  height: 286px;
+  max-height: 294px;
+  height: 294px;
+  margin-bottom: 24px;
 
 
   border-radius: 4px;
@@ -29,7 +30,7 @@ export const VolunteerPicture = styled.img`
   height: 62px;
   width: 62px;
   border-radius: 50%;
-  margin-right: 16px;
+  margin: 8px;
 `;
 
 export const VolunteerName = styled.p`
@@ -39,15 +40,16 @@ export const VolunteerName = styled.p`
   font-size: 18px;
   line-height: 26px;
   letter-spacing: -0.05em;
-
   color: #0D133D;
 `;
 
 export const QuoteContainer = styled.div`
   display: flex;
-`;
+  padding-left: 8px;
+  `;
 
 export const Quote = styled.p`
+padding: 8px;
 font-family: Poppins;
 font-style: normal;
 font-weight: normal;

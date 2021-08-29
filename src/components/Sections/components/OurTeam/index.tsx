@@ -94,7 +94,7 @@ export function OurTeam () {
               responsive={responsive}
             >
             {team.map(({ image, name, role }) => (
-              <PersonContainer>
+              <PersonContainer key={name}>
                 <PersonImage src={image} />
                 <PersonName>{name}</PersonName>
                 <PersonRole>{role}</PersonRole>

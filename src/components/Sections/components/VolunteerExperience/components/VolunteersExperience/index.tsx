@@ -69,21 +69,21 @@ export function VolunteersExperience() {
           responsive={responsive}
         >
           <VolunteerContainer
-            key={"Vini"}
-            name={"Vini 1"}
-            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0"}
+            key={"Pedro"}
+            name={"Pedro 1"}
+            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1634774400&v=beta&t=tI2U-VCW4UWm_famO5okd3_6EInaSPCfvkX9xSxhzDY"}
             quote={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
           />
           <VolunteerContainer
-            key={"Vini"}
-            name={"Vini 2"}
-            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0"}
+            key={"Pedro"}
+            name={"Pedro 2"}
+            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1634774400&v=beta&t=tI2U-VCW4UWm_famO5okd3_6EInaSPCfvkX9xSxhzDY"}
             quote={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
           />
           <VolunteerContainer
-            key={"Vini"}
-            name={"Vini 3"}
-            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1618444800&v=beta&t=0sXCPBInFVyw5BTY0SsizsILSAnQxt1L6vaXQ11g7w0"}
+            key={"Pedro"}
+            name={"Pedro 3"}
+            image_url={"https://media-exp1.licdn.com/dms/image/C4D03AQGGw0UpAHrDvA/profile-displayphoto-shrink_200_200/0/1595105611809?e=1634774400&v=beta&t=tI2U-VCW4UWm_famO5okd3_6EInaSPCfvkX9xSxhzDY"}
             quote={"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."}
           />
         </Carousel>

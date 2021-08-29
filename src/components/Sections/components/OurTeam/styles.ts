@@ -36,6 +36,12 @@ export const PersonImage = styled.img`
   width: 125px;
   height: 125px;
   border-radius: 65px;
+
+  @media (max-width: 600px) {
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  }
 `
 
 export const PersonName = styled.h2`
